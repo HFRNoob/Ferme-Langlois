@@ -1,0 +1,475 @@
+/* accueil.css */
+
+body {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Importation des polices */
+
+@font-face{
+    font-family: '29LT Riwaya';
+    src: url('../assets/fonts/29LT_riwaya/29LT\ riwaya.ttf');
+}
+
+@font-face{
+    font-family: 'Atma-Medium';
+    src: url('../assets/fonts/atma/Atma-Medium.ttf');
+}
+
+.bg_image{
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -2;
+}
+
+.gradient {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    z-index: 0;
+}
+
+.accueil {
+    position: absolute;
+    z-index: 1;
+    left : 143px;
+    top: 135px;
+}
+
+/* premiere partie de l'accueil - présentation */
+
+.titre_accueil {
+    font-size: 128px;
+    font-family: '29LT Riwaya';
+    color: white;
+}
+
+.separator_accueil{
+    margin-top: -50px;
+    margin-left: -5px;
+}
+
+.sous_titre_accueil {
+    font-size: 56pt;
+    font-family: 'Atma-Medium';
+    color: white;
+    margin-top: -20px;
+}
+
+/* deuxieme partie de l'accueil - horaires d'ouverture */
+
+.horaires {
+    display: flex;
+    flex-direction: column;
+    margin-top: 300px;
+    width: auto;
+    margin-right: 162px;
+}
+
+.titre_horaires {
+    font-family: '29LT Riwaya';
+    font-size: 80pt;
+}
+
+.separator_horaires {
+    margin-top: -60px;
+    margin-left: -5px;
+}
+
+.texte_horaires {
+    font-family: 'Atma-Medium';
+    font-size: 36pt;
+    margin-top: -10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* header_footer.css */
+
+/* Header CSS */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face{
+    font-family: 'Atma-SemiBold';
+    src: url('../assets/fonts/atma/Atma-SemiBold.ttf');
+}
+
+@font-face{
+    font-family: 'Atma-Regular';
+    src: url('../assets/fonts/atma/Atma-Regular.ttf');
+}
+
+.header{
+    width: 100%;
+    height: 110px;
+    display: flex;
+    border-bottom: solid #73BF70 3px;
+}
+
+.header_logo{
+    background-color: white;
+    width: 413px;
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_buttons{
+    background-color: #CBF7B2;
+    width: 100%;
+    height: 110px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header_all{
+    background-color: #83D68F;
+    height: 75px;
+    width: 150px;
+    border: solid #83D68F 3px;  
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    color: white; 
+    font-size: 18px;
+    transition: 0.2s;
+    font-family: 'Atma-SemiBold';
+}
+
+.header_a_propos{
+    height: 75px;
+    width: 179px;
+}
+
+.header_all:hover{
+    background-color: white;
+    color: #83D68F;
+    cursor: pointer;
+}
+
+/* Footer CSS */
+
+.footer{
+    background-color: #CBF7B2;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    margin-top: auto;
+}
+
+.footer_buttons{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;   
+    align-items: center;
+}
+
+.footer_all{
+    background-color: transparent;
+    border: none;
+    transition: 0.2s;
+    font-family: 'Atma-Regular';
+}
+
+.footer_all:hover{
+    text-decoration: underline 1px;
+}
+
+.up_arrow_button {
+    scroll-behavior: smooth;
+    position: fixed;
+    right: 0px;
+    bottom: 70px;
+}
+
+.up_arrow_button img {
+    margin-right: 30px;
+}
+
+/* Products CSS */
+
+@font-face{
+    font-family: 'Atma-SemiBold';
+    src: url('../assets/fonts/atma/Atma-SemiBold.ttf');
+    ascent-override: 100%;
+}
+
+@font-face{
+    font-family: 'Atma-Bold';
+    src: url('../assets/fonts/atma/Atma-Bold.ttf');
+}
+
+.products  {
+    background-color: #E9F5E4;
+    display: flex;
+    flex-direction: column;
+    padding-left: 69px;
+    padding-right: 91px;
+    padding-top: 66px;
+    padding-bottom: 113px;
+    height: 1505px;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.animal_card {
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: #FFFFFF;
+    justify-content: space-around;
+    border-radius: 15px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 30px;
+}
+
+.animal_products {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+}
+
+.vache .animal_products {
+    justify-content: space-between;
+}
+
+.product_card {
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 100px;
+    padding-left: 70px;
+    padding-right: 70px;
+
+    border-radius: 10px;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.vache .animal_card {
+    width: 320px;
+    height: 592px;
+}
+
+.chevre .animal_card {
+    width: 320px;
+    height: 328px;
+}
+
+.brebis .animal_card {
+    width: 320px;
+    height: 328px;
+}
+
+#animal_image {
+    border-radius: 10px;
+    max-height: 188px;
+
+}
+
+.vache #animal_image {
+    height: 340px;
+}
+
+#animal_title {
+    font-family: 'Atma-Bold';
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+#animal_subtitle {
+    font-family: 'Atma-SemiBold';
+    font-size: 18px;
+}
+
+#product_title {
+    font-family: 'Atma-SemiBold';
+    font-size: 36px;
+}
+
+#product_image {
+    height: 100%;
+    max-height: 80px;
+    object-fit: contain;
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px -2px rgba(0, 0, 0, 0.25);
+}
+
+#product_button {
+    transition: 0.2s;
+    height: 80px;
+    width: 174px;
+    border-radius: 100px;
+    border-color: #CBF7B2;
+    background-color:#CBF7B2;
+    border-style: solid;
+    border-width: 5px;
+    font-family: 'Atma-SemiBold';
+    font-size: 24px;
+}
+
+#product_button:hover {
+    background-color: #FFFFFF;
+    cursor: pointer;
+
+}
+
+/* Quisommesnous CSS */
+
+@font-face {
+    font-family: "More Sugar";
+    src: url("font/more_sugar/MoreSugar-Regular.ttf");
+}
+
+body {
+    
+    font-family: "More Sugar", sans-serif;
+    background: #ffffff;
+    color: #000;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.perso {
+    max-width: 500px;
+    margin: 0 auto 80px;
+    background: #f6f6f6;
+    border-radius: 25px;
+    padding: 25px;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.perso img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.perso-texte h2 {
+    margin: 0 0 10px;
+    font-size: 26px;
+}
+
+.perso-texte p {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.histoire {
+    max-width: 800px;
+    margin: auto;
+}
+
+.histoire-1930 {
+    display: flex;
+    gap: 25px;
+    align-items: flex-start;
+}
+
+.annee {
+    min-width: 70px;
+    text-align: center;
+    padding: 8px 12px;
+    border-radius: 20px;
+    border: 2px solid #CBF7B2;
+    color: #8ccf72;
+    font-weight: bold;
+}
+
+.histoire {
+    max-width: 800cm;
+    margin: 0;
+}
+
+.histoire-1930 p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+.timeline {
+    margin: 60px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    padding-left: 30px;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 38px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: #CBF7B2;
+}
+
+.timeline-annee {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    position: relative;
+}
+
+.dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 2px solid #CBF7B2;
+    background: white;
+    margin-right: 15px;
+    z-index: 1;
+}
+
+.timeline-annee.active .dot {
+    background: #CBF7B2;
+}
+
+.label {
+    color: #b5b5b5;
+    font-size: 14px;
+}
+
+.timeline-annee.active .label {
+    color: #CBF7B2;
+    font-weight: bold;
+}
